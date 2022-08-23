@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="Author" content="Eduard R.C.">
+    <meta name="Description" content="Full-stack web developper / développeur web full-stack /  Portfolio Raimond-code / CV-Raimond-code / Raimond-code.com / développeur web France / French web developer">
+
+    <!-- css.gg -->
+    <link href='https://css.gg/css' rel='stylesheet'>   
+    <link href='https://cdn.jsdelivr.net/npm/css.gg/icons/all.css' rel='stylesheet'>
+    <!---->
+
+    <link rel="stylesheet" href="<?=$css_link;?>">
+
+    <!--Animation & tricks css & js-->
+    <link rel="stylesheet" href="<?=$anim_css_link;?>">
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💻<?=$page_title;?></title>
+</head>
+<body>
+
+    <!--Header & navbar-->
+    <section class="header">
+        <h1 class="header_title">💻Raimond-code</h1>
+        <button class="menu_btn" id="menu_btn"><i class="gg-align-left"></i></button>
+    </section>
+
+    <style>
+        .header{
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 15px 40px;
+            justify-content: space-between;
+            position: fixed;
+            z-index: 6;
+            background: white;
+
+            -webkit-box-shadow: 1px 4px 14px 5px rgba(0,0,0,0.54); 
+box-shadow: 1px 4px 14px 5px rgba(0,0,0,0.54);
+        }
+
+        .menu_btn{
+            border: none;
+            background: none;
+            display: flex;
+            height: 30px;
+            width: 30px;
+            margin: 20px 0;
+        }
+        .menu_btn:hover{
+            cursor: pointer;
+        }
+
+        .menu_btn i{
+            display: flex;
+            text-align: center;
+            
+            transform: translate3d(50%, 50%, 0);
+        }
+
+        @media (min-width: 800px) {
+            .header{
+                padding: 15px 20%;
+            }
+        }
+
+    </style>
+
+<div class="menu_div" id="menu_div">
+
+    <div>
+        <a href="" class="menu_link">Test</a>
+        <a href="" class="menu_link">Test</a>
+        <a href="" class="menu_link">Test</a>
+        <a href="" class="menu_link">Test</a>
+    </div>
+
+    <button id="close_menu">Fermer</button>
+
+</div>
+
+<style>
+
+    .menu_div{
+        position:fixed;
+        background: rgba(0, 41, 0, 0.836);
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        top: 0;
+        transform: translateX(100%);
+        transition: .3s ease-in-out;
+    }
+
+    .menu_link{
+        display: block;
+        font-size: 2em;
+        color: white;
+    }
+
+</style>
+
+    <script type="text/javascript">
+
+        const menu_btn = document.getElementById('menu_btn')
+
+        var menu = document.getElementById('menu_div')
+
+        menu_btn.addEventListener('click', () => {
+            menu.style.transform = "translateX(0)"
+        })
+
+        const close_menu = document.getElementById('close_menu')
+
+        close_menu.addEventListener('click', () => {
+            menu.style.transform = "translateX(100%)"
+        })
+
+    </script>
