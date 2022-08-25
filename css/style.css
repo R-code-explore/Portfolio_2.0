@@ -83,6 +83,7 @@ body {
 .icones {
   width: 40px;
   height: 40px;
+  transition: .2s ease-in-out;
 }
 
 .suite_desktop{display: none;}
