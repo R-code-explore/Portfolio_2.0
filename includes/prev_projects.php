@@ -8,43 +8,52 @@
             line-height: 60px;
         }
     </style>
+    <div class="prev_content">
+        <?php  
 
-    <?php  
+            require_once './db_connexion/connect.php';
 
-        require_once './db_connexion/connect.php';
+            $pdoPrevs = $db->prepare("SELECT * FROM `imgs`");
+            $executePrevs = $pdoPrevs->execute();
+            $prevs = $pdoPrevs->fetchAll();
 
-        $pdoPrevs = $db->prepare("SELECT * FROM `imgs`");
-        $executePrevs = $pdoPrevs->execute();
-        $prevs = $pdoPrevs->fetchAll();
+            foreach($prevs as $prev):
 
-        foreach($prevs as $prev):
+        ?>
 
-    ?>
+        <div class="prev_div">
+            <!-----Carousel bootstrap ----->
+            <!-----Carousel bootstrap ----->
 
-    <div class="prev_div">
-        <!-----Carousel bootstrap ----->
-        <!-----Carousel bootstrap ----->
-
-        <p class="prev_text"><?=utf8_encode($prev['txt']);?></p>
+            <p class="prev_text"><?=utf8_encode($prev['txt']);?></p>
             
-        <div class="slider">
-        <div class="slides">
-            <div class="prev_slide"><img src="./session_db/uploads/<?=$prev['name_1'];?>" class="prev_img"></div>
-            <div class="prev_slide"><img src="./session_db/uploads/<?=$prev['name_2'];?>" class="prev_img"></div>
-            <div class="prev_slide"><img src="./session_db/uploads/<?=$prev['name_3'];?>" class="prev_img"></div>
-        </div>
+            <div class="slider">
+            <div class="slides">
+                <div class="prev_slide"><img src="./session_db/uploads/<?=$prev['name_1'];?>" class="prev_img"></div>
+                <div class="prev_slide"><img src="./session_db/uploads/<?=$prev['name_2'];?>" class="prev_img"></div>
+                <div class="prev_slide"><img src="./session_db/uploads/<?=$prev['name_3'];?>" class="prev_img"></div>
+            </div>
+            </div>
+
+            <!------------>
+            <!------------>
         </div>
 
-        <!------------>
-        <!------------>
+        <?php endforeach; ?>
     </div>
-
-    <?php endforeach; ?>
 
     <a href="" class="go_projects">Voir tous les projets >></a>
 </div>
 
 <style>
+    @media (min-width: 1400px){
+        .prev_content{
+            display: flex;
+            max-width: 1450px;
+            margin: auto;
+        }
+    }
+
     .go_projects{
         display: block;
         color: white;
@@ -71,16 +80,17 @@
 
     .prev_div{
         width: 90%;
-        max-width: 560px;
+        max-width: 400px;
         padding: 10px;
-        border: solid 2px white;
+        border: none;
         border-radius: 10px;
-        margin: auto;
+        background: white;
+        margin: 40px auto;
     }
     .prev_text{
         width: 320px;
         margin: auto;
-        color: white;
+        color: black;
     }
 
     /*Carousel & images */

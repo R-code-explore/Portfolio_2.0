@@ -1,15 +1,28 @@
 <div class="plus_about_div" id="plus_about_div">
-    <button class="close_about_div" id="close_about_div">Fermer</button>
+    <a class="close_about_div" id="close_about_div">Fermer</a>
     <p>
         Bonjour 👋,<br>Passionné par l'informatique et le développement en général, j'ai tapé mes premières lignes de code à l'âge de 13 / 14 ans pour mes jeux ( création de serveurs en java, la plus part du temps ). Bien plus tard en étant passé par quelques secteurs de métiers, j'ai choisis ma voix que j'explore maintenant depuis environ 2 ans.
     </p>
 </div>
 
+<style>
+    .close_about_div{
+        display: block;
+        background: orange;
+        font-size: 1.2em;
+        text-align: center;
+        margin: 20px auto;
+        color: white;
+
+        cursor: pointer;
+    }
+</style>
+
 <div class="banner_section banner_mobile">
     
     <video autoplay muted loop class="banner_video">
         <source src="./assets/Banner_background_video.mp4" type="video/mp4">
-      </video>
+    </video>
       
     <div class="in_banner_content">
 
@@ -43,12 +56,6 @@
 </div>
 
 <style>
-    @media (max-width: 1200px) {
-        .banner_scroll_txt{
-            display: none;
-        }
-    }
-
     .banner_scroll_txt{
         display: flex;
         margin: 60px auto;
@@ -116,6 +123,17 @@
 box-shadow: 1px 4px 14px 5px rgba(255, 255, 255, 0.54);
     }
 
+    @media (min-width:1400px) {
+        .icones:hover{
+        cursor: pointer;
+        width: 85px;
+        transition: .2s ease-in-out;
+
+        -webkit-box-shadow: 1px 4px 14px 5px rgba(255, 255, 255, 0.54); 
+box-shadow: 1px 4px 14px 5px rgba(255, 255, 255, 0.54);
+    }
+    }
+
     .banner_section{
         position: sticky;
         top: 100px;
@@ -141,6 +159,24 @@ box-shadow: 1px 4px 14px 5px rgba(255, 255, 255, 0.54);
         margin: auto;
     }
 
+    .banner_section_desktop{
+        display: none;
+    }
+
+    @media (min-width: 1400px){
+        .banner_section{
+            display: none;
+        }
+
+        .banner_section_desktop{
+            display: block;
+        }
+
+        .banner_scroll_txt{
+            margin-top: 170px;
+        }
+    }
+
 </style>
 
 <script type="text/javascript">
@@ -160,3 +196,133 @@ close_about.addEventListener('click', () => {
 })
 
 </script>
+
+<!--Body & script pour desktop-->
+
+<div class="banner_section_desktop">
+    
+    <video autoplay muted loop class="banner_video_desktop">
+        <source src="./assets/Banner_background_video.mp4" type="video/mp4">
+    </video>
+
+    <div class="in_banner_content_desktop">
+    
+        <h3>Développeur Web Full-Stack</h3>
+        
+        <div class="content_desktop">
+            <div class="content_banner_left">
+                <img src="./assets/logo.png" class="logo">
+            
+                <img src="./assets/github_icone.png" class="icones" onclick="location.href='https://github.com/r-code-explore'">
+            
+                <img src="./assets/codeur_icone.jpg" class="icones" onclick="location.href='https://www.codeur.com/-admin_ed'">
+            
+                <img src="./assets/malt_icone.png" class="icones" onclick="location.href='https://www.malt.fr/profile/eduardraimond'">
+
+                <img src="./assets/linkedin_icone.png" class="icones" onclick="location.href='https://fr.linkedin.com/in/eduard-raimond-ciupercher-8329a61a6?trk=people-guest_people_search-card'">
+            </div>
+            <div class="content_banner_right">
+                <p>
+                    Bonjour 👋,<br>Passionné par l'informatique et le développement en général, j'ai tapé mes premières lignes de code à l'âge de 13 / 14 ans pour mes jeux ( création de serveurs en java, la plus part du temps ). Bien plus tard en étant passé par quelques secteurs de métiers, j'ai choisis ma voix que j'explore maintenant depuis environ 2 ans.
+                </p>
+                <a class="plus_about_desktop" id="plus_about_desktop">Lire la suite >></a>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+
+            const about_btn_2 = document.getElementById('plus_about_desktop')
+            
+            about_btn_2.addEventListener('click', () => {
+                about_div.style.transform = "translateX(0)"
+            })
+            
+            </script>
+
+        <div class="banner_scroll_txt">
+            <p>N'hésitez pas à "scroller"</p>
+            <i class="gg-arrow-down-o"></i>
+        </div>
+    
+    </div>
+</div>
+
+<style>
+    .plus_about_desktop:hover{
+        color: skyblue;
+        cursor: pointer;
+    }
+
+    .banner_section_desktop{
+        position: sticky;
+        top:100px;
+        background: #042e00;
+    }
+
+    .banner_video_desktop{
+        display: block;
+        width: 100%;
+        height: 650px;
+        object-fit: cover;
+        position: relative;
+        opacity: 0.3;
+    }
+
+    @media (min-width: 1400px) and (min-height: 950px) {
+        .banner_video_desktop{
+            height: 950px;
+        }
+    }
+
+    .in_banner_content_desktop{
+        display: block;
+        position: absolute;
+        top:0;
+        width: 80%;
+        max-width: 1000px;
+        padding: 40px 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .in_banner_content_desktop h3{
+        color:white;
+        font-size: 1.5em;
+    }
+
+    .content_banner_right p, .content_banner_right a{
+        color: white;
+    }
+
+    .content_desktop{
+        display: flex;
+        justify-content: space-between;
+    }
+    .content_desktop div{
+        width: 40%;
+    }
+
+    .content_banner_left img{
+        width: 80px;
+        height: 80px;
+        margin: 15px 0;
+    }
+
+    .content_banner_left{
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    
+    
+    @media (max-width: 1200px) {
+        .banner_scroll_txt{
+            display: none;
+        }
+    }
+
+</style>

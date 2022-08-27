@@ -101,5 +101,18 @@ body {
   }
 }
 
+@media (min-width: 1400px){
+  .banner_section{
+      display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .banner_scroll_txt{
+      display: none;
+  }
+}
+
+
 /**************/
 /**************/

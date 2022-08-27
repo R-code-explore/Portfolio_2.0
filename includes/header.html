@@ -27,6 +27,11 @@
     <section class="header">
         <h1 class="header_title">💻Raimond-code</h1>
         <button class="menu_btn" id="menu_btn"><i class="gg-align-left"></i></button>
+        <div class="desktop_menu">
+            <a href="#contact">Contact</a>
+            <a href="">Projets</a>
+            <a href="">Blog</a>
+        </div>
     </section>
 
     <style>
@@ -68,20 +73,41 @@ box-shadow: 1px 4px 14px 5px rgba(0,0,0,0.54);
                 padding: 15px 20%;
             }
         }
+        
+        .desktop_menu{display:none;}
+
+        @media (min-width: 1200px){
+            .menu_btn{display: none;}
+
+            .desktop_menu{
+                font-size: 1.2em;
+                position: relative;
+                top: 25px;
+                display: flex;
+                height: 30px;
+                padding: 0 15px;
+                width: 50%;
+                max-width: 400px;
+                justify-content: space-between;
+            }
+            .desktop_menu a{
+                color:rgb(63, 63, 63);
+            }
+
+            .desktop_menu a:hover{
+                color:skyblue;
+            }
+        }
 
     </style>
 
 <div class="menu_div" id="menu_div">
-
+    <a id="close_menu">Fermer</a>
     <div>
-        <a href="" class="menu_link">Test</a>
-        <a href="" class="menu_link">Test</a>
-        <a href="" class="menu_link">Test</a>
-        <a href="" class="menu_link">Test</a>
+        <a href="#contact" class="menu_link" onclick="closeMenu()">Contact</a>
+        <a href="" class="menu_link" onclick="closeMenu()">Projets</a>
+        <a href="" class="menu_link" onclick="closeMenu()">Blog</a>
     </div>
-
-    <button id="close_menu">Fermer</button>
-
 </div>
 
 <style>
@@ -94,6 +120,7 @@ box-shadow: 1px 4px 14px 5px rgba(0,0,0,0.54);
         height: 100%;
         z-index: 10;
         top: 0;
+        padding-top: 100px;
         transform: translateX(100%);
         transition: .3s ease-in-out;
     }
@@ -102,6 +129,19 @@ box-shadow: 1px 4px 14px 5px rgba(0,0,0,0.54);
         display: block;
         font-size: 2em;
         color: white;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    #close_menu{
+        display: block;
+        background: orange;
+        font-size: 1.2em;
+        text-align: center;
+        margin: 20px auto;
+        color: white;
+
+        cursor: pointer;
     }
 
 </style>
@@ -121,5 +161,9 @@ box-shadow: 1px 4px 14px 5px rgba(0,0,0,0.54);
         close_menu.addEventListener('click', () => {
             menu.style.transform = "translateX(100%)"
         })
+
+        function closeMenu(){
+            menu.style.transform = "translateX(100%)"
+        }
 
     </script>
