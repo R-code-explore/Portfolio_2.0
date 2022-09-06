@@ -1,118 +1,253 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Exo:wght@600&display=swap");
-p, h1, h3, h5, a {
-  text-decoration: none;
-  font-family: "Exo", sans-serif;
+/***Import Bold Font**/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+/**Import Light Font**/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
+body{
+    margin: 0;
+    scroll-behavior: smooth;
+    background: #052632;
+
+    box-shadow: inset 50px 91px 70px 30px rgba(0, 0, 0, 0.5), inset -50px 43px 70px 30px rgba(0, 0, 0, 0.5);
 }
 
-h1, h3, h5 {
-  font-weight: 600;
+.general_btn{
+    padding: 10px 15px;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid orange;
+    transition: .2s ease-in-out;
 }
 
-body {
-  margin: 0;
-  scroll-behavior: smooth;
+.general_btn:hover{
+    border: 2px solid white;
+    transition: .2s ease-in-out;
 }
 
-/*****Banner*****/
-/*****Banner*****/
-
-.banner_section {
-  position: relative;
-  width: 100%;
-  background: #042E00;
+h1, h3, p, a{
+    font-family: 'Noto Sans' , sans-serif;
+    text-decoration: none;
+    color: white;
 }
 
-.banner_video {
-  display: block;
-  width: 100%;
-  height: 450px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: relative;
-  opacity: 0.3;
-}
-
-@media (min-width: 1200px) {
-    .banner_video{
-      height: 650px;
-    }
-}
-
-.in_banner_content > p, .in_banner_content h3 {
-  color: white;
-}
-
-.in_banner_content button {
-  color: white;
-  font-family: "Exo", sans-serif;
-  background: none;
-  border: none;
-  font-size: 1em;
-  width: 120px;
-}
-
-.in_banner_content button:hover {
-  color: skyblue;
-  cursor: pointer;
-}
-
-.in_banner_content {
-  display: block;
-  position: absolute;
-  top: 0;
-  padding: 20px;
-}
-
-@media (min-width: 800px) {
-    .in_banner_content{
-      padding: 20px 20%;
-    }
-}
-
-.Gif_icones_section {
-  display: flex;
-  justify-content: space-between;
-  margin: 40px auto;
-}
-
-.logo {
-  width: 60px;
-}
-
-.icones {
-  width: 40px;
-  height: 40px;
-  transition: .2s ease-in-out;
-}
-
-.suite_desktop{display: none;}
-
-@media (min-width: 1200px) {
-  .about{
-    width: 70%;
-    margin: 60px auto;
-  }
-  
-  .plus_about{
-    display: flex;
-    width: 70%;
+/**Header**/
+header{
+    position: fixed;
+    width: 80%;
+    padding: 15px 10%;
     margin: auto;
-  }
+    display: flex;
+    z-index: 10;
+    background: #052632c5;
+    justify-content: space-between;
+
+    -webkit-box-shadow: 1px 4px 12px 5px rgba(0,0,0,0.85); 
+    box-shadow: 1px 4px 12px 5px rgba(0,0,0,0.85);
 }
 
-@media (min-width: 1400px){
-  .banner_section{
-      display: none;
-  }
+.logo_title{
+    display: flex;
 }
+.title{
+    font-size: 20px;
+}
+.logo{
+    display: block;
+    width: 28px;
+    height: 23px;
+    transform: translateY(60%);
+}
+
+@media (max-width: 500px){
+    .logo{
+        display: none;
+    }
+}
+
+.menu_desktop{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.menu_link_desktop{
+    transform: translateY(60%);
+    height: 22px;
+    transition: .3s ease-in-out;
+}
+.menu_link_desktop:hover{
+    color: orange;
+    border-bottom:1px solid white;
+    transition: .3s ease-in-out;
+}
+
+@media (max-width:1000px) {
+    .menu_desktop{display: none;}
+    .menu_phone{
+        display: block;
+    }
+}
+
+@media (min-width:1000px) {
+    .menu_phone{display: none;}
+}
+
+
+/***Banner**/
+.banner{
+    display: block;
+    width: 80%;
+    max-width: 1650px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+@media (max-width: 1000px){
+    .banner{
+        padding-top: 120px;
+    }
+}
+
+.banner_content{
+    display: block;
+}
+
+.banner_sep_bar{display: none;}
+
+@media (min-width: 1200px) {
+    .banner_content{
+        display:flex;
+        margin-top: 80px;
+        justify-content: space-between;
+    }
+
+    .banner_sep_bar{
+        display: block;
+        height: 474px;
+        width: 7px;
+        border-radius: 3px;
+        background-color: #FF6700;
+        margin: 20px 20px;
+    }
+}
+
+.bonjour{
+    font-size: 56px;
+}
+@media (min-width: 1200px) {
+    .bonjour{
+        font-size: 80px;
+    }
+
+    .sub_title{
+        letter-spacing: .8em;
+    }
+}
+@media (min-width: 1500px) {
+    .bonjour{
+        font-size: 80px;
+        margin-top: 0;
+    }
+}
+
+.left_banner_buttons{
+    display: block;
+}
+.left_banner_buttons a{
+    display: block;
+    width: 194px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+@media (min-width: 550px) {
+    .left_banner_buttons{
+        display: flex;
+        width: 100%;
+        max-width: 650px;
+        justify-content: space-between;
+    }
+
+    .left_banner_buttons a{
+        margin:0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .left_banner_buttons a{
+        width: 150px;
+        text-align: center;
+    }
+
+    .left_banner_buttons{
+        display: flex;
+        width: 80%;
+        max-width: 650px;
+        justify-content: space-between;
+    }
+}
+
+/**Banner partie right**/
 
 @media (max-width: 1200px) {
-  .banner_scroll_txt{
-      display: none;
-  }
+    .banner_right{
+        width: 80%;
+        max-width: 750px;
+        display: block;
+        margin-top: 80px;
+    }
+}
+@media (min-width: 1200px) {
+    .banner_right{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
+@media (max-width: 1200px){
+    .icons_link{
+        display: flex;
+        width: 100%;
+        max-width: 650px;
+        margin: 40px 0;
+        justify-content: space-between;
+    }
+    .icon_link, .icon_link_1{
+        width: 50px;
+        transition: .2s ease-in-out;
+    }
+}
 
-/**************/
-/**************/
+.icons_link img:hover{
+    width: 55px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+    .icons_link{
+        display: block;
+    }
+    
+    .icon_link, .icon_link_1{
+        display: block;
+        width: 50px;
+        margin-top: 40px;
+        transition: .2s ease-in-out;
+    }
+
+}
+
+/**Video Banner**/
+@media (max-width: 1200px){
+    .video_banner{
+        display: none;
+    }
+}
+
+.video_banner{
+    width: 80%;
+    max-width: 550px;
+}
