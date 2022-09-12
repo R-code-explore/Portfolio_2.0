@@ -1,3 +1,5 @@
 blog.php
 session_db/uploads/
-session_db/mdp_changes.php
+session_db/mdp_change.php
+cgu.php
+connexion.php
