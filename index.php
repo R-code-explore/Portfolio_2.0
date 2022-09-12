@@ -3,6 +3,21 @@
 $page_title = "Raimond-code.com / Accueil";
 $css_link = "./css/style.css";
 
+$header_pages_1 = "Contact";
+$header_link_1 = "#contact";
+
+$header_pages_2 = "Projets";
+$header_link_2 = "";
+
+$header_pages_3 = "Blog";
+$header_link_3 = "./blog.php";
+
+$header_pages_4 = "A propos";
+$header_link_4 = "";
+
+$header_pages_5 = "Ce que je propose";
+$header_link_5 = "";
+
 include './includes/header.php';
 ?>
 
@@ -41,15 +56,20 @@ include './includes/header.php';
 
     <section class="about_desktop">
         <p class="para about_txt_desktop">Passionné par l'informatique et le développement en général, j'ai tapé mes premières lignes de code à l'âge de 13 / 14 ans pour mes jeux ( création de serveurs en java, la plus part du temps ). Bien plus tard en étant passé par quelques secteurs de métiers, j'ai choisis ma voix que j'explore maintenant depuis environ 2 ans.
-
+<br><br>
 Je me suis principalement formé en autodidacte et suivi ensuite un parcours en e-learning afin de valider mes compétences officiellement.
-
+<br><br>
 Plusieurs missions effectuées en tant qu'indépendant pour particuliers et professionnels.
+<br>
 Ces différentes expériences m'ont permis de travailler à en renforcer mes compétences en:
-- Traitement et gestion du back-end ( PHP, SQL, NodeJs et différents frameworks les accompagnant )
-- Expérience et interface utilisateur sur les sites et apps web ( SASS, Javascript, HTML / CSS et différents frameworks qui les accompagnent )
-- Traitement et gestion de système de paiement en ligne
-- Et également à l'administration système et sécurité.</p>
+<br>
+    - Traitement et gestion du back-end ( PHP, SQL, NodeJs et différents frameworks les accompagnant )
+<br>
+    - Expérience et interface utilisateur sur les sites et apps web ( SASS, Javascript, HTML / CSS et différents frameworks qui les accompagnent )
+<br>
+    - Traitement et gestion de système de paiement en ligne
+<br>
+    - Et également à l'administration système et sécurité.</p>
         <div class="about_photo_title_desktop">
             <h3 class="about_title">A propos de moi</h3>
             <img src="./assets/Profile.jpg">
@@ -62,15 +82,20 @@ Ces différentes expériences m'ont permis de travailler à en renforcer mes com
             <img src="./assets/Profile.jpg">
         </div>
         <p class="para about_txt_mobile">Passionné par l'informatique et le développement en général, j'ai tapé mes premières lignes de code à l'âge de 13 / 14 ans pour mes jeux ( création de serveurs en java, la plus part du temps ). Bien plus tard en étant passé par quelques secteurs de métiers, j'ai choisis ma voix que j'explore maintenant depuis environ 2 ans.
-
+<br><br>
 Je me suis principalement formé en autodidacte et suivi ensuite un parcours en e-learning afin de valider mes compétences officiellement.
-
+<br><br>
 Plusieurs missions effectuées en tant qu'indépendant pour particuliers et professionnels.
+<br>
 Ces différentes expériences m'ont permis de travailler à en renforcer mes compétences en:
-- Traitement et gestion du back-end ( PHP, SQL, NodeJs et différents frameworks les accompagnant )
-- Expérience et interface utilisateur sur les sites et apps web ( SASS, Javascript, HTML / CSS et différents frameworks qui les accompagnent )
-- Traitement et gestion de système de paiement en ligne
-- Et également à l'administration système et sécurité.</p>
+<br>
+    - Traitement et gestion du back-end ( PHP, SQL, NodeJs et différents frameworks les accompagnant )
+<br>
+    - Expérience et interface utilisateur sur les sites et apps web ( SASS, Javascript, HTML / CSS et différents frameworks qui les accompagnent )
+<br>
+    - Traitement et gestion de système de paiement en ligne
+<br>
+    - Et également à l'administration système et sécurité.</p>
     </section>
 
     <section class="service">

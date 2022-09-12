@@ -28,11 +28,11 @@
         </div>
 
         <div class="menu_desktop">
-            <a href="#contact" class="menu_link_desktop">Contact</a>
-            <a href="" class="menu_link_desktop">Projets</a>
-            <a href="" class="menu_link_desktop">Contact</a>
-            <a href="" class="menu_link_desktop">A propos</a>
-            <a href="" class="menu_link_desktop">Ce que je propose</a>
+            <a href="<?=$header_link_1?>" class="menu_link_desktop"><?=$header_pages_1?></a>
+            <a href="<?=$header_link_2?>" class="menu_link_desktop"><?=$header_pages_2?></a>
+            <a href="<?=$header_link_3?>" class="menu_link_desktop"><?=$header_pages_3?></a>
+            <a href="<?=$header_link_4?>" class="menu_link_desktop"><?=$header_pages_4?></a>
+            <a href="<?=$header_link_5?>" class="menu_link_desktop"><?=$header_pages_5?></a>
         </div>
 
         <div class="menu_phone" onclick="openMenu()">
@@ -43,9 +43,9 @@
 
 <div id="block_phone_menu">
     <button class="general_btn" onclick="closeMenu()">X</button>
-    <a href="#contact" class="menu_link_desktop" onclick="closeMenu()">Contact</a>
-    <a href="" class="menu_link_desktop" onclick="closeMenu()">Projets</a>
-    <a href="" class="menu_link_desktop" onclick="closeMenu()">Contact</a>
-    <a href="" class="menu_link_desktop" onclick="closeMenu()">A propos</a>
-    <a href="" class="menu_link_desktop" onclick="closeMenu()">Ce que je propose</a>
+    <a href="<?=$header_link_1?>" class="menu_link_desktop" onclick="closeMenu()"><?=$header_pages_1?></a>
+    <a href="<?=$header_link_2?>" class="menu_link_desktop" onclick="closeMenu()"><?=$header_pages_2?></a>
+    <a href="<?=$header_link_3?>" class="menu_link_desktop" onclick="closeMenu()"><?=$header_pages_3?></a>
+    <a href="<?=$header_link_4?>" class="menu_link_desktop" onclick="closeMenu()"><?=$header_pages_4?></a>
+    <a href="<?=$header_link_5?>" class="menu_link_desktop" onclick="closeMenu()"><?=$header_pages_5?></a>
 </div>
