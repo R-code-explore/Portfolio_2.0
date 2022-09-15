@@ -7,16 +7,16 @@ $header_pages_1 = "Contact";
 $header_link_1 = "#contact";
 
 $header_pages_2 = "Projets";
-$header_link_2 = "";
+$header_link_2 = "./projets.php";
 
 $header_pages_3 = "Blog";
 $header_link_3 = "./blog.php";
 
 $header_pages_4 = "A propos";
-$header_link_4 = "";
+$header_link_4 = "#about_id";
 
 $header_pages_5 = "Ce que je propose";
-$header_link_5 = "";
+$header_link_5 = "#services_id";
 
 include './includes/header.php';
 ?>
@@ -28,8 +28,8 @@ include './includes/header.php';
             <div class="banner_left">
                 <h3 class="bonjour">Bonjour,<br>et bienvenue</h3>
                 <div class="left_banner_buttons">
-                    <a href="" class="general_btn">Naviguer</a>
-                    <a href="" class="general_btn">Me contacter</a>
+                    <a href="#about_id" class="general_btn">Naviguer</a>
+                    <a href="#contact" class="general_btn">Me contacter</a>
                 </div>
             </div>
 
@@ -54,7 +54,7 @@ include './includes/header.php';
 
     <!--Index part_1 ( About )-->
 
-    <section class="about_desktop">
+    <section class="about_desktop" id="about_id">
         <p class="para about_txt_desktop">Passionné par l'informatique et le développement en général, j'ai tapé mes premières lignes de code à l'âge de 13 / 14 ans pour mes jeux ( création de serveurs en java, la plus part du temps ). Bien plus tard en étant passé par quelques secteurs de métiers, j'ai choisis ma voix que j'explore maintenant depuis environ 2 ans.
 <br><br>
 Je me suis principalement formé en autodidacte et suivi ensuite un parcours en e-learning afin de valider mes compétences officiellement.
@@ -76,7 +76,7 @@ Ces différentes expériences m'ont permis de travailler à en renforcer mes com
         </div>
     </section>
 
-    <section class="about_mobile">
+    <section class="about_mobile" id="about_id">
     <div class="about_photo_title_mobile">
             <h3 class="about_title">A propos de moi</h3>
             <img src="./assets/Profile.jpg">
@@ -98,7 +98,7 @@ Ces différentes expériences m'ont permis de travailler à en renforcer mes com
     - Et également à l'administration système et sécurité.</p>
     </section>
 
-    <section class="service">
+    <section class="service" id="services_id">
         <h3 class="service_title">Mes services</h3>
         <p class="para service_txt">
             - Création d’un site / application web pour votre activité. Que vous soyez un   particulier, une entreprise, une association ou simplement développer votre blog  en ligne, je saurais m’en charger.
@@ -117,7 +117,7 @@ Ces différentes expériences m'ont permis de travailler à en renforcer mes com
             - Et la correction de bugs, ou mises à jour des différentes technologies que votre site / application / base de données utilise.
             <br>
             <br>
-            N'hésitez donc pas à me contacter pour en discuter plus en détails et au plaisir de travailler ensemble. Me contacter en <a href="">cliquant ici.</a>
+            N'hésitez donc pas à me contacter pour en discuter plus en détails et au plaisir de travailler ensemble. Me contacter en <a href="#contact">cliquant ici.</a>
         </p>
     </section>
 
@@ -158,7 +158,7 @@ Ces différentes expériences m'ont permis de travailler à en renforcer mes com
 
     </div>
 
-    <a href="" class="view_all_project">Voir plus de projets et réalisations</a>
+    <a href="./projets.php" class="view_all_project">Voir plus de projets et réalisations</a>
 
     </section>
 

@@ -22,7 +22,7 @@
 <body>
     <header class="header">
     
-        <div class="logo_title">
+        <div class="logo_title" onclick="location.href='./index.php'">
             <h1 class="title">Raimond-code.com</h1>
             <img src="./assets/logo.png" class="logo">
         </div>
