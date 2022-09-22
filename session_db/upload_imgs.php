@@ -73,7 +73,7 @@
 
         if(in_array($fileActualExt_1, $allowed_1) && in_array($fileActualExt_2, $allowed_2) && in_array($fileActualExt_3, $allowed_3)){
             if($fileError_1 === 0 && $fileError_2 === 0 && $fileError_3 === 0){
-                if($fileSize_1 < 1000000 && $fileSize_2 < 1000000 && $fileSize_3 < 1000000){
+                if($fileSize_1 < 2100000 && $fileSize_2 < 2100000 && $fileSize_3 < 2100000){
                     
                     $fileNameNew_1 = uniqid('', true).".".$fileActualExt_1;
                     $fileDestination_1 = 'uploads/'.$fileNameNew_1;
@@ -108,9 +108,9 @@
                         if(!$query->execute()){
                             die("Il semble que vos infos n'ont pas été enregistrés");
                         }else{
-                            //header("Location: ./home_admin.php?uploadSuccess");
+                            header("Location: ./home_admin.php?uploadSuccess");
 
-                            echo $imgName_1 . ' ' . $imgName_2 . ' ' . $imgName_3; 
+                            //echo $imgName_1 . ' ' . $imgName_2 . ' ' . $imgName_3; 
                         }
 
                     //////////////////////////////////

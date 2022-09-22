@@ -17,4 +17,4 @@ window.addEventListener("scroll", () => {
     }else{
         toTop.style.transform = "translateX(200%)"
     }
-}) 
+})

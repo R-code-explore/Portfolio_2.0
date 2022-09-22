@@ -37,10 +37,10 @@ include './includes/header.php';
 
             <div class="banner_right">
                 <div class="icons_link">
-                    <img src="./assets/codeur_icone.jpg" class="icon_link_1">
-                    <img src="./assets/github_icone.png" class="icon_link">
-                    <img src="./assets/linkedin_icone.png" class="icon_link">
-                    <img src="./assets/malt_icone.png" class="icon_link">
+                    <img src="./assets/codeur_icone.jpg" class="icon_link_1" onclick="location.href='https://www.codeur.com/-admin_ed'">
+                    <img src="./assets/github_icone.png" class="icon_link" onclick="location.href='https://github.com/r-code-explore'">
+                    <img src="./assets/linkedin_icone.png" class="icon_link" onclick="location.href='https://www.linkedin.com/in/eduard-raimond-ciupercher-8329a61a6/'">
+                    <img src="./assets/malt_icone.png" class="icon_link" onclick="location.href='https://www.malt.fr/profile/eduardraimond'">
                 </div>
 
                 <video autoplay muted loop class="video_banner">
@@ -111,7 +111,7 @@ Ces différentes expériences m'ont permis de travailler à en renforcer mes com
             Evidemment, une fois ce site ou application créer ou recréer, l’idéal serait d’apporter une maintenance tout le long de son existence et cette maintenance est fortement conseillé pour plusieurs points :
             <br>
             <br>
-            - La sécurité de vôtre site : Alors là, je ne vais pas me faire des amis, mais tout ce que l’on a pu vous vendre ou vous faire entendre par le passé sur le fait qu' un tel ou un tel vous promet une sécurité optimale dans laquelle il est impossible d’y pénétrer.. n’y croyez pas un seul mot, une sécurité peut être optimale mais pas infaillible, tout est une question de moyen ou de temps, mais je l’explique un peu plus en détails <a href="">juste ici >> .</a> Cependant, on peut, en apportant les bonnes solutions, une bonne veille sur toutes les mises à jours, ainsi que par moment les bonnes lignes de code, limiter fortement ce risque.
+            - La sécurité de vôtre site : Alors là, je ne vais pas me faire des amis, mais tout ce que l’on a pu vous vendre ou vous faire entendre par le passé sur le fait qu' un tel ou un tel vous promet une sécurité optimale dans laquelle il est impossible d’y pénétrer.. n’y croyez pas un seul mot, une sécurité peut être optimale mais pas infaillible, tout est une question de moyen ou de temps, mais je l’explique un peu plus en détails <a href="./blog.php">juste ici >> .</a> Cependant, on peut, en apportant les bonnes solutions, une bonne veille sur toutes les mises à jours, ainsi que par moment les bonnes lignes de code, limiter fortement ce risque.
             <br>
             <br>
             - Et la correction de bugs, ou mises à jour des différentes technologies que votre site / application / base de données utilise.
@@ -164,7 +164,7 @@ Ces différentes expériences m'ont permis de travailler à en renforcer mes com
 
     <div class="sep_bar"></div>
 
-    <form action="" class="contact" id="contact">
+    <form action="./db_users/send_msg.php" method="post" class="contact" id="contact">
 
     <h3 class="contact_title">Contactez-moi</h3>
 

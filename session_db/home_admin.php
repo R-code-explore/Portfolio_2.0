@@ -52,7 +52,7 @@ if(!isset($_SESSION["user"]["id"]) == 1){
 
 </form>
 
-<form action="./del_msg.php" method="post">
+<form action="../db_users/del_msg.php" method="post">
     <button type="submit" id="del_msg" class="btn btn-danger">Delete all messages</button>
     <style>
         #del_msg{
@@ -75,7 +75,7 @@ if(!isset($_SESSION["user"]["id"]) == 1){
 
     $uploadImage_folder = './uploads/';
 
-    foreach($images as $image): 
+    foreach($images as $image):
 
 ?>
 

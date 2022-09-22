@@ -3,3 +3,9 @@ session_db/uploads/
 session_db/mdp_change.php
 cgu.php
 connexion.php
+db_users/
+session_db/index.php
+.htaccess
+db_connexion/index.php
+css/index.php
+assets/index.php
