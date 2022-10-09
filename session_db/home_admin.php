@@ -114,7 +114,7 @@ if(!isset($_SESSION["user"]["id"]) == 1){
     <form method="post" action="./txt_update.php" class="txt_modifier">
         <label for="prev_intro">Modification texte de présentation ( 140 caractères max )</label>
         <input type="radio" name="txt_id" id="txt_id" value="<?=$image['id'];?>" checked>
-        <textarea name="prev_intro" id="prev_intro" class="txt_prev_intro" maxlength="140"><?=utf8_encode($image['txt'])?></textarea><!--Require txt d'intro-->
+        <input type ="text" name="prev_intro" id="prev_intro" class="txt_prev_intro" maxlength="140" placeholder="<?=utf8_encode($image['txt'])?>"><!--Require txt d'intro-->
         
         <button type="submit" name="submit" id="submit">Modifier le txt</button>
     
