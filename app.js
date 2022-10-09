@@ -18,3 +18,14 @@ window.addEventListener("scroll", () => {
         toTop.style.transform = "translateX(200%)"
     }
 })
+
+//about id redirection
+const desktopAbout = document.querySelector('.about_desktop')
+
+function aboutRedirection(){
+  if(desktopAbout.style.display != "none"){
+    location.href='./index.php#about_desktopId'
+  }else{
+    location.href='./index.php#about_id'
+  }
+}

@@ -54,7 +54,7 @@ include './includes/header.php';
 
     <!--Index part_1 ( About )-->
 
-    <section class="about_desktop" id="about_id">
+    <section class="about_desktop" id="about_desktopId">
         <p class="para about_txt_desktop">Passionné par l'informatique et le développement en général, j'ai tapé mes premières lignes de code à l'âge de 13 / 14 ans pour mes jeux ( création de serveurs en java, la plus part du temps ). Bien plus tard en étant passé par quelques secteurs de métiers, j'ai choisis ma voix que j'explore maintenant depuis environ 2 ans.
 <br><br>
 Je me suis principalement formé en autodidacte et suivi ensuite un parcours en e-learning afin de valider mes compétences officiellement.
@@ -63,13 +63,16 @@ Plusieurs missions effectuées en tant qu'indépendant pour particuliers et prof
 <br>
 Ces différentes expériences m'ont permis de travailler à en renforcer mes compétences en:
 <br>
-    - Traitement et gestion du back-end ( PHP, SQL, NodeJs et différents frameworks les accompagnant )
+    - Traitement et gestion du back-end ( PHP, SQL, NodeJs (mais j'avoue avoir mon petit penchant pour PHP tout de même) et différents frameworks les accompagnant )
 <br>
-    - Expérience et interface utilisateur sur les sites et apps web ( SASS, Javascript, HTML / CSS et différents frameworks qui les accompagnent )
+    - Expérience et interface utilisateur sur les sites et apps web ( Maquettage, SASS, Javascript, HTML / CSS et différents frameworks qui les accompagnent )
 <br>
-    - Traitement et gestion de système de paiement en ligne
+    - Traitement et gestion de système de paiement, de communication, de formulaires et autres types de demandes / requests envers un serveur avec de potentiels informations sensibles à traiter.
 <br>
-    - Et également à l'administration système et sécurité.</p>
+    - Et également à l'administration système et sécurité.
+<br><br>
+Bien évidemment, je ne m’arrête pas là, je suis toujours ouvert et partant pour de nouveaux défis / ou challenges, ( je vous laisse l’appeler comme vous souhaitez ), pour toujours découvrir encore plus de choses cachés dans le monde du développement et des technos. ( et je ne parle pas que du web ).
+</p>
         <div class="about_photo_title_desktop">
             <h3 class="about_title">A propos de moi</h3>
             <img src="./assets/Profile.jpg">
@@ -89,13 +92,16 @@ Plusieurs missions effectuées en tant qu'indépendant pour particuliers et prof
 <br>
 Ces différentes expériences m'ont permis de travailler à en renforcer mes compétences en:
 <br>
-    - Traitement et gestion du back-end ( PHP, SQL, NodeJs et différents frameworks les accompagnant )
+    - Traitement et gestion du back-end ( PHP, SQL, NodeJs (mais j'avoue avoir mon petit penchant pour PHP tout de même) et différents frameworks les accompagnant )
 <br>
-    - Expérience et interface utilisateur sur les sites et apps web ( SASS, Javascript, HTML / CSS et différents frameworks qui les accompagnent )
+    - Expérience et interface utilisateur sur les sites et apps web ( Maquettage, SASS, Javascript, HTML / CSS et différents frameworks qui les accompagnent )
 <br>
-    - Traitement et gestion de système de paiement en ligne
+    - Traitement et gestion de système de paiement, de communication, de formulaires et autres types de demandes / requests envers un serveur avec de potentiels informations sensibles à traiter.
 <br>
-    - Et également à l'administration système et sécurité.</p>
+    - Et également à l'administration système et sécurité.
+<br><br>
+Bien évidemment, je ne m’arrête pas là, je suis toujours ouvert et partant pour de nouveaux défis / ou challenges, ( je vous laisse l’appeler comme vous souhaitez ), pour toujours découvrir encore plus de choses cachés dans le monde du développement et des technos. ( et je ne parle pas que du web ).
+</p>
     </section>
 
     <section class="service" id="services_id">
