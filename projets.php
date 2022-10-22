@@ -72,13 +72,11 @@ En ce qui concerne la partie Front-End, j’ai utilisé comme noté plus haut, d
 
 <div class="sep_bar"></div>
 
-<h3 class="title_project">Projet "Hypnoconect.com"</h3>
+<h3 class="title_project">Projet "Corps-conscience.com"</h3>
 <div class="section_projets">
 
     <p>
-        Conception et développement du site hypnoconect.com .
-        <br>
-        Pour ce projet la maquette m'a été fournie.
+        Conception et développement du site corps-conscience.com .
         <br>
         <strong>Langages et technos utilisés:</strong>
         <br><br>
@@ -100,21 +98,24 @@ En ce qui concerne la partie Front-End, j’ai utilisé comme noté plus haut, d
         <br>
         - Bootstrap
         <br><br>
-        <strong>Gestion de réservation en ligne:</strong>
-        <br>
-        - CMS Wordpress
-        <br>
+        <strong>Gestion de la base de données</strong>
         - Gestion par commandes SQL.
         <br><br>
-        Voici donc un projet qui a été assez long sur la durée, en effet une fois tout le Back-End mis en place, ce qui a été plutôt rapide, c’était disons le Front qui a beaucoup changé. Eh oui, une fois que j’ai cru avoir satisfait mon client, il s’avère que ce dernier a eu beaucoup de changements d’idées concernant le design de la page et la mise en place de certains éléments.
+        La demande du client était simple:
 <br>
-Mais, parce que oui il y a un mais, j’ai beaucoup apprécié cette expérience, en effet, elle m’a apporté beaucoup en terme de contact humain, compréhension du client et surtout l’écoute et le besoin de ce dernier.
+Un site de présentation de son activité, avec une interface interconnecté, reliant front et commandes en back, lui permettant de gérer son site à son aise.
+<br>
+Une petite différence est tout de même apparu dans ce projet, et cette dernière étant ma collaboration avec l’agence <strong><a href="https://terredeconnexion.com/" class="terredeco">Terre de connexion</a></strong>.
+    <style>.terredeco:hover{color: orange;}</style>
+<br>
+Une collaboration qui signe le début d’une longue aventure avec de beaux projets à venir.
+
     </p>
 
     <div class="img_project_session">
-        <img src="./assets/Site_2/Capture.PNG" class="">
-        <img src="./assets/Site_2/Capture_02.PNG">
-        <img src="./assets/Site_2/Capture_03.PNG">
+        <img src="./assets/Site_2/img_1.PNG">
+        <img src="./assets/Site_2/img_2.PNG">
+        <img src="./assets/Site_2/img_3.PNG">
     </div>
 
 </div>
