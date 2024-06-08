@@ -6,7 +6,7 @@ Site web personnel, utilisation portfolio et CV et blog.
 
 # Technologies utilisées
 
-- Php, SQL, MySql, Html, css, javascript et Wamp pour les tests serveur et bdd en locale
+- Php, SQL, MySql, Html, css, javascript et Wamp pour les tests serveur et bdd en local
 
 - No Frameworks
 
